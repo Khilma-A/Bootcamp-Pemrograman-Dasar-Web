@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="halaman2.html">
+        Kalo Mau Pindah, PENCET!!!
+    </a>
+    <!-- Biar satu tab -->
+    <br>
+    <a href="https://www.youtube.com/">
+        Youtube
+    </a>
+    <!-- Biar beda tab -->
+    <br>
+    <a href="https://www.youtube.com/" target="_blank">
+        Youtube
+    </a>
+    <!-- Biar pake img -->
+    <br>
+    <a href="http://dilesin.com/" target="_blank">
+        <img src="favicon-dilesin.png" width="50">
+    </a>
+    <center>
+        <img src="pfp.jpg" alt="gambar" width="200">
+        <h1>!!!</h1>
+    </center>
+    <!-- Table berfungsi untuk membuattable -->
+    <!-- tr berfungsi untuk membuat baris -->
+    <!-- th berfungsi untuk membuat header -->
+    <!-- td berfungsi untuk membuat kolom -->
+    <!-- border berfungsi untuk memberitahukan garis pada table -->
+    <!-- width berfungsi untuk memberikan lebar pada table -->
+    <!-- colspan berfungsi untuk menggabungkan kolom -->
+    <!-- align berfungsi untuk mengatur posisi teks -->
+    <br>
+    <table border="1" width="100%">
+        <tr>
+            <th align="left">
+                No
+            </th>
+            <th align="center">
+                Nama
+            </th>
+            <th align="right">
+                Kelas
+            </th>
+            <th colspan="3">
+                Kehadiran
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                Khilma
+            </td>
+            <td>
+                XI PPLG 5
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>APA</td>
+            <td>Ya</td>
+        </tr>
+    </table>
+
+    <!-- 
+        form berfungsi untuk membuat form
+        label berfungsi untuk membuat label
+        input berfungsi untuk membuat inputan 
+        type berfungsi untuk memnentukan tipe inputan
+        name berfungsi untuk memberikan nama pada inputan 
+        placeholder berfungsi untuk memberikan placeholder pada inputan
+        id berfungsi untuk memberikan id pada inputan
+        onclic berfungsi untuk menjelaskan fungsi ketika klik
+    -->
+    <h1>Ngetik</h1>
+    <form method="GET">
+        <label for="">Nama</label>
+        <br>
+        <input type="text" name="nama" placeholder="Masukan nama anda di sini">
+        <br>
+        <label for="">email</label>
+        <br>
+        <input type="email" name="email" placeholder="Masukkan email anda di sini">
+        <br>
+        <label for="">password</label>
+        <br>
+        <input type="password" name="password" placeholder="Masukkan password anda di sini ">
+        <br>
+        <input type="checkbox" onclick="show()">
+        <br>
+        
+        <label for="">Tampilin password</label>
+        <label for="">Tanggal Lahir</label>
+        <br>
+        <input type="date">
+        <br>
+        <label for="">Jenis kelamin</label>
+        <br>
+        <select name="" id="">
+            <option value="">Laki-laki</option>
+            <option value="">Perempuan</option>
+        </select>
+        <br>
+        <label for="">Alamat</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <label for="">Foto KTP</label>
+        <br>
+        <input type="file">
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script>
+        function show() {
+            var input = document.getElementById("password");
+            if (input.type === "password") {
+                input.type = "text"
+            } else {
+                input.type = "password"
+            }
+        }
+    </script>
+</body>
+</html>
